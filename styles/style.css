@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding:0;
+}
+
+.logoLobo {
+  width:8%;
+}
+
+.header {
+  text-align: center;
+  background-image: url(../images/headerBG.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  color: black;
+  border-bottom: 2px solid grey;
+  padding-top: 1%;
+}
+
+.menuHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.menuHeader li{
+  list-style: none;
+  padding: 10px;
+}
+
+.menuHeader li a{
+  Color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+         
+.fadeIn1 {
+  animation: fadeIn 15s;
+}
+
+.fadeIn2 {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.main {
+  text-align: center;
+  background: radial-gradient(circle, rgba(109,116,122,1) 47%, rgba(125,131,137,1) 56%, rgba(237,237,237,1) 100%);
+  color: black;
+  padding: 1%;
+
+}
+
+
+.buttonMoreBooks {
+  background: #1a1b1b;
+  border-radius: 12px;
+  color: #fff;
+  padding: 10px;
+}
+
+.buttonMoreBooks:disabled {
+  color: #1a1b1b;
+}
+
+
+.buttonMoreBooks:hover {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.buttonMoreBooks:hover:active {
+  transform: scale(1.05) translateY(.25rem);
+}
+
+
+
+.footer {
+  text-align: center;
+  background-image: url(../images/headerBG.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  color: black;
+  border-bottom: 2px solid grey;
+  padding-top: 1%;
+}
+
+.noDecoration a {
+  text-decoration: none;
+}
+
+.latestBook {
+  display: flex;
+  flex-direction: column;
+  max-width: 1060 px;
+}
+
+.sectionTitle {
+  padding:15px;
+  }
+
+.typeWriter {
+  color: #000000;
+  font-size: 26px;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-right: .15em solid #ddd;
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(30, end) infinite,  .5s step-end infinite;
+  padding-bottom: 10px;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+  0% {
+    width: 0
+  }
+  50% {
+    width: 18%
+  }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  70% {
+    border-color: rgb(59, 57, 57)
+  }
+}
+
+
+.TitleEvan {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color:black;
+}
+
+
+
+.bookTitle {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700; color:#202020;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  font-family: serif;
+
+}
+
+
+.padding {
+  padding: 10px;
+}
